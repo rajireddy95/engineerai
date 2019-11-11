@@ -31,4 +31,13 @@ public class DemoSitePO{
 	
 	@FindBy(how = How.CSS, using = "input[name='signup_email']")
 	public static WebElement email;
+	
+	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Next ')]")
+	public static WebElement next;
+	
+	@FindBy(how = How.CSS, using = "input[name='firstlastname']")
+	public static WebElement name;
+	
+	@FindBy(how = How.XPATH, using = "//input[@placeholder='Mobile Number']")
+	public static WebElement mobile;
 }

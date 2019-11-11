@@ -49,7 +49,14 @@ public class DemoSiteStepDefs {
 
 	@When("^fills in the user details$")
 	public void fills_in_the_user_details() throws Throwable {
-		DemoSitePO.email.click();
+		DemoSitePO.email.sendKeys("johndoe@fun.com");
+		Thread.sleep(2000);
+		DemoSitePO.next.click();
+		Thread.sleep(2000);
+		DemoSitePO.name.sendKeys("johndoe");
+		Thread.sleep(2000);
+		DemoSitePO.mobile.sendKeys("644342313");
+		
 	}
 
 	@Then("^the user is successfully registered with the website$")
