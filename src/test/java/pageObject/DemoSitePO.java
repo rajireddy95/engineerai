@@ -40,4 +40,7 @@ public class DemoSitePO{
 	
 	@FindBy(how = How.XPATH, using = "//input[@placeholder='Mobile Number']")
 	public static WebElement mobile;
+	
+	@FindBy(how = How.CSS, using = "input[name='signup_password']")
+	public static WebElement passWd;
 }

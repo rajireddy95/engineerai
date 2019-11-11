@@ -56,6 +56,8 @@ public class DemoSiteStepDefs {
 		DemoSitePO.name.sendKeys("johndoe");
 		Thread.sleep(2000);
 		DemoSitePO.mobile.sendKeys("644342313");
+		Thread.sleep(2000);
+		DemoSitePO.passWd.sendKeys("test12345");
 		
 	}
 
