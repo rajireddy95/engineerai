@@ -32,17 +32,24 @@ public class DemoSiteStepDefs {
 
 	@Given("^selects the currency as USD$")
 	public void selects_the_currency_as_USD() throws Throwable {
-
+		Thread.sleep(2000);
+		DemoSitePO.currencyBox.click();
+		Thread.sleep(2000);
+		DemoSitePO.selectUSD.click();
+		Thread.sleep(2000);
 	}
 
 	@When("^the user clicks on sign in and register$")
 	public void the_user_clicks_on_sign_in_and_register() throws Throwable {
-
+		DemoSitePO.signIn.click();
+		Thread.sleep(2000);
+		DemoSitePO.register.click();
+		Thread.sleep(2000);
 	}
 
 	@When("^fills in the user details$")
 	public void fills_in_the_user_details() throws Throwable {
-
+		DemoSitePO.email.click();
 	}
 
 	@Then("^the user is successfully registered with the website$")
