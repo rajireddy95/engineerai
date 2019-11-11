@@ -1,0 +1,86 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: rajireddy95@gmail.com"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11205634900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Site Registration",
+        "description": "",
+        "id": "registration-to-engineer-ai;site-registration",
+        "after": [
+          {
+            "result": {
+              "duration": 4114207500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6778474300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user lands on engineer ai staging page",
+            "match": {
+              "location": "DemoSiteStepDefs.the_user_lands_on_engineer_ai_staging_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the users enters username and password",
+            "match": {
+              "location": "DemoSiteStepDefs.the_users_enters_username_and_password()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@demo1"
+          }
+        ]
+      }
+    ],
+    "name": "Registration to engineer ai",
+    "description": "As an user of the website, I should be able to register into the site successfully",
+    "id": "registration-to-engineer-ai",
+    "keyword": "Feature",
+    "uri": "registration.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@demo"
+      }
+    ]
+  }
+]
